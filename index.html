@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>교촌_fullpage</title>
+    <style type="text/css">
+        
+        /* --- reset CSS --- */
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        img{border: 0px; vertical-align: top;}
+        a{text-decoration: none; color: black;}
+        
+        /* --- header --- */
+        #header{
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #FFF;
+        }
+        
+        #header .hlogo{
+            float: left;
+            width: 220px;
+            margin-left: 30px;
+            margin-top: 25px;
+/*            border: 1px dashed red;*/
+        }
+        
+        #header ul.gnb{
+            float: left;
+            width: 800px;
+            margin-left: 670px;
+        }
+        
+        #header ul.gnb>li{
+            float: left;
+            line-height: 45px;
+            padding: 0px 27px;
+            height: 65px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: 500;
+            margin-top: 30px;
+            /* border: 1px dashed red; */
+            position: relative;
+            transition: 3s;
+        }
+
+        #header ul.gnb>li .sub{
+          width: 150px;
+          margin-left: -75px;
+          position: absolute;
+          line-height: 35px;
+          left: 50%;
+          top: 60px;
+          border-radius: 5%;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          display: none;
+          text-align: center;
+          background-color: #ffcb44;
+          /* border: 1px solid red; */
+          transition: transform 3s ;
+      
+        }
+
+        #header ul.gnb>li .sub a{
+          color: #FFF;
+        }
+
+        #header ul.gnb>li:hover .sub{display: block;}
+        #header ul.gnb>li:hover{display: block;}
+
+
+
+
+        #header ul.gnb>li:hover .sub{
+          transition: transform 3s;
+        }
+        
+        /* --- section --- */
+        /* --- main page --- */
+        #section{
+            width: 1850px;
+        }
+
+        .gmme1{
+          position: fixed;
+          right: 60px;
+          top: 140px;
+
+        }
+        
+        .mbanner{
+            width: 1903px;
+        }
+        
+        /* --- scroll --- */
+        .mpage1{
+            width: 1903px;
+            height: 953px;
+            background-image: url(images/gyochon/mb1.jfif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .mpage1_txt h1{
+            width: 800px;
+            font-size: 5em;
+            text-align: center;
+            padding-top: 310px;
+            padding-bottom: 20px;
+            color: white;
+            margin-left: 550px;
+            border-bottom: 10px solid maroon;
+        }
+        
+        .mpage1_txt h2{
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 15pt;
+            margin-top: 30px;
+            line-height: 30pt;
+            letter-spacing: -2px;
+        }
+        
+        .mpage2{
+            width: 1903px;
+            height: 953px;
+            background-image: url(images/gyochon/mb2.jfif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .mpage2_txt h1{
+            width: 800px;
+            font-size: 5em;
+            text-align: center;
+            padding-top: 310px;
+            padding-bottom: 20px;
+            color: white;
+            margin-left: 550px;
+            border-bottom: 10px solid maroon;
+        }
+        
+        .mpage2_txt h2{
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 15pt;
+            margin-top: 30px;
+            line-height: 30pt;
+            letter-spacing: -2px;
+        }
+        
+        .mpage3{
+            width: 1903px;
+            height: 953px;
+            background-image: url(images/gyochon/mb3.jfif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .mpage3_txt h1{
+            width: 800px;
+            font-size: 5em;
+            text-align: center;
+            padding-top: 310px;
+            padding-bottom: 20px;
+            color: white;
+            margin-left: 550px;
+            border-bottom: 10px solid maroon;
+        }
+        
+        .mpage3_txt h2{
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 15pt;
+            margin-top: 30px;
+            line-height: 30pt;
+            letter-spacing: -2px;
+        }
+        
+        /* --- BRAND --- */
+        .brand{
+            width: 1320px;
+            height: 660px;
+            margin: 0 auto;
+            margin-bottom: 250px;
+            margin-top: 100px;
+/*            background-color: yellowgreen;*/
+        }
+        
+        h3{
+            text-align: center;
+            font-size: 4em;
+            padding-top: 70px;
+            padding-bottom: 40px;
+/*            background-color: lightcoral;*/
+        }
+        
+        .box1{
+            width: 1320px;
+            height: 100px;
+/*            background-color: gray;*/
+            overflow: hidden;
+        }
+        
+        .box1 li{
+            float: left;
+            width: 328px;
+/*            border: 1px dashed blue;*/
+/*            background-color: aquamarine;*/
+        }
+        
+        .b1{
+            width: 320px;
+            padding-top: 36px;
+            padding-bottom: 30px;
+            padding-left: 5px;
+        }
+        
+        .b2{
+            width: 230px;
+            padding-left: 55px;
+        }
+        
+        .b3{
+            width: 194px;
+            padding-left: 65px;
+        }
+        
+        .b4{
+            width: 300px;
+            padding-top: 25px;
+            padding-bottom: 21px;
+            padding-left: 12px;
+        }
+        
+        .box2{
+            width: 1320px;
+            height: 360px;
+            margin-top: 90px;
+/*            background-color: darkgreen;*/
+            overflow: hidden;
+        }
+        
+        .box2 li{
+            float: left;
+            width: 328px;
+/*            border: 1px dashed blue;*/
+/*            background-color: lightsalmon;*/
+        }
+        
+        .b5{
+            width: 300px;
+            padding-left: 15px;
+        }
+        
+        .b6{
+            width: 300px;
+            padding-left: 15px;
+        }
+        
+        .b7{
+            width: 300px;
+            height: 280px;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+        
+        .b8{
+            width: 300px;
+            height: 280px;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+        
+        .box2 li p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 15pt;
+            margin-top: 20px;
+        }
+        
+
+        /* --- (FRANCHISE) 가맹점 개설 안내 --- */
+        #section .franchise .f_wrapper{
+          width: 1903px;
+          height: 1000px;
+          /* background-color: aqua; */
+        }
+
+        #section .franchise .f_ubox{
+          width: 1903px;
+          height: 500px;
+          /* background-color: rosybrown; */
+        }
+
+        #section .franchise .f_ubox .f_box1{
+          float: left;
+          width: 713px;
+          height: 360px;
+          padding-left: 230px;
+          padding-top: 140px;
+          letter-spacing: -1px;
+          line-height: 30px;
+          /* background-color: cadetblue; */
+        }
+
+        .f_img1{
+          float: left;
+          width: 960px;
+          height: 500px;
+        } 
+
+        #section .franchise .f_bbox{
+          width: 1903px;
+          height: 500px;
+          /* background-color: red; */
+        }
+
+        #section .franchise .f_bbox .f_box2{
+          float: left;
+          width: 813px;
+          height: 340px;
+          padding-left: 130px;
+          padding-top: 160px;
+          letter-spacing: -1px;
+          line-height: 30px;
+          /* background-color: lightpink; */
+        }
+
+        .f_img2{
+          float: left;
+          width: 960px;
+          height: 500px;
+        } 
+
+        .f_h1, .f_h2{
+          font-size: 22pt;
+          font-weight: bold;;
+          letter-spacing: -3px;
+          /* border: 1px dashed red; */
+          line-height: 30px;
+        }
+
+        .gmme{
+          background-color: #ffcb44;
+          border-radius: 10px;
+          font-size: 11pt;
+          font-weight: 540;
+          padding: 10px;
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+
+        /* --- STORY --- */
+
+        .story{
+          width: 1320px;
+          height: 900px;
+          margin: 0 auto;
+          margin-top: 100px;
+          margin-bottom: 200px;
+          /* background-color: aqua; */
+        }
+
+        h4{
+          text-align: center;
+          font-size: 4em;
+          height: 100px;
+          padding-bottom: 30px;
+        }
+
+        .sbox{
+          height: 1320px;
+          height: 700px;
+          overflow: hidden;
+          /* background-color: cornflowerblue; */
+        }
+
+        .imgbox1{
+          float: left;
+          width: 330px;
+          /* background-color: rgb(138, 78, 6); */
+        }
+
+        .y1, .y2, .y3, .y4{
+          height: 490px;
+          /* background-color: blueviolet; */
+        }
+
+        .x1, .x2, .x3, .x4{
+          font-size: 1em;
+          width: 260px;
+          line-height: 25px;
+          padding-top: 10px;
+        }
+
+        .imgbox2{
+          float: left;
+          width: 330px;
+          /* background-color: red; */
+        }
+
+        .imgbox3{
+          float: left;
+          width: 330px;
+          /* background-color: rgb(196, 255, 230); */
+        }
+
+        .imgbox4{
+          float: left;
+          width: 330px;
+          /* background-color: blue; */
+        }
+
+        .s1, .s2, .s3, .s4{
+          float: left;
+          width: 322px;
+          height: 470px;
+        }
+
+        .s1, .s2, .s3{
+          margin-right: 10px;
+        }
+
+        .ss1, .ss2, .ss3, .ss4{
+          font-weight: bold;
+          font-size: 16pt;
+          letter-spacing: -1px;
+        }
+
+        .blog_dbg{
+          text-align: center;
+          width: 180px;
+          height: 50px;
+          line-height: 50px;
+          /* padding-top: 15px; */
+          font-weight: bold;
+          letter-spacing: -2px;
+          margin-left: 570px;
+          border: 3px solid #000;
+          transition: all 1s;
+        }
+
+        .blog_dbg:hover{
+          background-color: #000;
+        }
+
+        .blog_dbg:hover a{ /* .blog_dbg a:hover로도 할 수 있긴 함 */
+          color: white;
+        }
+
+        .blog_dbg a{
+          /* text-decoration: underline; */
+          display: block;
+        }
+
+        /* --- ESG --- */
+        .ESG{
+          background-image: url(images/gyochon/bg_esg.jpg);
+          width: 1903px;
+          height: 980px;
+        }
+
+        .ESG .ESG_h1{
+          padding-top: 80px;
+          padding-bottom: 50px;
+        }
+
+        .ESG .ESG_bbox{
+          width: 1320px;
+          margin: 0 auto;
+          height: 550px;
+          overflow: hidden;
+        }
+
+        .ESG_sbox1, .ESG_sbox2, .ESG_sbox3 {
+          float: left;
+          width: 430px;
+          height: 480px;
+          background-color: #fff;
+          /* border: 1px dashed blue; */
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+
+        .ESGimg1, .ESGimg2, .ESGimg3{
+          float: left;
+          width: 430px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+
+        .ESG_sbox2, .ESG_sbox3{
+          margin-left: 10px;
+        }
+
+        .ESGp1, .ESGp2, .ESGp3{
+          width: 400px;
+          margin: 0 auto;
+          /* border: 1px dashed red; */
+          text-align: center;
+          padding-top: 320px;
+        }
+
+        .sb1, .sb2, .sb3{
+          font-size: 16pt;
+          font-weight: bold;
+          letter-spacing: -1px;
+        }
+
+        /* --- EVENT --- */
+        .EVENT{
+          width: 1903px;
+          padding-bottom: 110px;
+          padding-top: 100px;
+          /* background-color: aqua; */
+        }
+
+        .event_img{
+          width: 1320px;
+          padding-left: 300px;
+        }
+
+        /* --- INSTAGRAM ---*/
+        .INSTAGRAM{
+          width: 1903px;
+          height: 900px;
+          background-color: #ffcb44;
+        }
+
+        .inst_h1{
+          font-size: 3em;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 40px;
+        }
+
+        .inst_h2{
+          font-size: 3em;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+          padding-bottom: 40px;
+        }
+
+        .inst_bbox{
+          width: 1320px;
+          margin: 0 auto;
+          /* background-color: aquamarine; */
+        }
+
+        .inst_bbox li{
+          float: left;
+          width: 420px;
+        }
+
+        .inst_sbox1, .inst_sbox2, .inst_sbox3{
+          width: 420px;
+          height: 550px;
+          /* border: 1px dashed red; */
+          /* background-color: #fff; */
+        }
+
+        .inst_sbox1, .inst_sbox2{
+          margin-right: 20px;
+        }
+
+        .instimg1, .instimg2, .instimg3{
+          width: 420px;
+        }
+
+        .INSTAGRAM p{
+          text-align: center;
+          padding-top: 30px;
+        }
+
+        .inst_b{
+          font-weight: bold;
+          font-size: 15pt;
+        }
+
+        /* --- FOOTER --- */
+        #footer{
+          width: 1320px;
+          height: 300px;
+          margin: 0 auto;
+          /* background-color: aqua; */
+        }
+
+        #footer .sect1{
+          width: 250px;
+          height: 450px;
+          float: left;
+          padding-top: 100px;
+        }
+
+        #footer .sect2{
+          float: left;
+          width: 700px;
+          height: 200px;
+          margin-top: 100px;
+          letter-spacing: -1px;
+          /* border: 1px dashed red; */
+        }
+
+        #footer .sect2 li{
+          margin-bottom: 5px;
+          margin-right: 7px;
+        }
+
+        .f_b1{
+          font-size: 12pt;
+          font-weight: bold;
+        }
+
+        .f_b2{
+          font-size: 20pt;
+          font-weight: bold;
+        }
+
+        .sect2_uul{
+          margin-top: 25px;
+        }
+
+        .sect2_uul li{
+          float: left;
+        }
+
+        .f_bb1{
+          font-size: 12pt;
+          font-weight: bold;
+        }
+
+        .f_bb2{
+          color: gray;
+        }
+
+        .f_b3{
+          float: left;
+          margin-top: 15px;
+          font-size: 9.5pt;
+          line-height: 18px;
+        }
+
+        .f_bb3{
+          font-weight: bold;
+        }
+
+        #footer .sect3{
+          float: left;
+          width: 230px;
+          height: 80px;
+          margin-top: 100px;
+          padding-left: 120px;
+          /* border: 1px dashed blue; */
+        }
+
+      .sect3 li{
+        float: left;
+        margin-right: 15px;
+      }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="hlogo">
+            <a href="https://www.kyochonfnb.com/"><img src="images/gyochon/logo.png" alt="로고"></a>
+        </div>
+        <ul class="gnb">
+            <li>
+              <a href="#">기업정보</a>
+              <ul class="sub">
+                <li><a href="#">경영이념</a></li>
+                <li><a href="#">about 교촌</a></li>
+                <li><a href="#">CEO 메세지</a></li>
+                <li><a href="#">주요 계열사</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업영역</a>
+              <ul class="sub">
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">제품소개</a></li>
+                <li><a href="#">국내사업</a></li>
+                <li><a href="#">글로벌</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG</a>
+              <ul class="sub">
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">ESG소식</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">홍보센터</a>
+              <ul class="sub">
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">CI/BI 소개</a></li>
+                <li><a href="#">교촌 역사관</a></li>
+                <li><a href="#">미디어센터</a></li>
+                <li><a href="#">사보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">투자정보</a>
+              <ul class="sub">
+                <li><a href="#">기업지배구조</a></li>
+                <li><a href="#">공시정보</a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">IR자료실</a></li>
+                <li><a href="#">공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재육성</a>
+              <ul class="sub">
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">성장</a></li>
+                <li><a href="#">워라밸</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스포츠</a>
+              <ul class="sub">
+                <li><a href="#">교촌 1991<br>레이디스 오픈</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>   
+
+    <div id="section">
+
+      <div class="gmme1">
+        <img src="images/gyochon/ico_inquiry2.png" alt="가맹문의">
+      </div>
+
+      <div class="mpage">
+        <div>
+            <img class="mbanner" src="images/gyochon/mb0.jpg" alt="메인배너">   
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="mpage1">
+            <ul class="mpage1_txt">
+                <li><h1>상생</h1></li>
+                <li><h2>더불어 살고 나누며 살아야 한다.<br>상생하는 사회를 위해 노력합니다.</h2></li>
+            </ul>
+        </div>
+        <div class="mpage2">
+            <ul class="mpage2_txt">
+                <li><h1>정도</h1></li>
+                <li><h2>기업가 정신으로 투명 경영과 윤리 경영을 실천합니다.<br>가맹점 및 파트너사와 공정한 거래를 통해 상생 협력 관계를 구축합니다.<br>우리가 만든 정직한 이야기와 정직한 맛을 소비자에게 전달합니다.</h2></li>
+            </ul>
+        </div>
+        <div class="mpage3">
+            <ul class="mpage3_txt">
+                <li><h1>나눔</h1></li>
+                <li><h2>더불어 사는 사회에서 기업의 사회적 책임을 다하며 사회 공헌 활동을 전개합니다.<br>미래의 꿈과 희망이 자라도록 교육의 기회를 마련하고 소외 계층을 지원하며 지역 사회<br> 구성원과 함께 성장합니다.</h2></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="brand">
+          <h3>BRAND</h3>
+          <ul class="box1">
+              <li>
+                  <img class="b1" src="images/gyochon/a1.jfif" alt="b1">
+              </li>
+              <li>
+                  <img class="b2" src="images/gyochon/a2.png" alt="b2">
+              </li>
+              <li>
+                  <img class="b3" src="images/gyochon/a3.jfif" alt="b3">
+              </li>
+              <li>
+                  <img class="b4" src="images/gyochon/a4.jfif" alt="b4">
+              </li>
+          </ul>
+          <ul class="box2">
+              <li>
+                  <img class="b5" src="images/gyochon/b1.png" alt="b5">
+                  <p>교촌시리즈</p>
+              </li>
+              <li>
+                  <img class="b6" src="images/gyochon/b2.png" alt="b6">
+                  <p>레드시리즈</p>
+              </li>
+              <li>
+                  <img class="b7" src="images/gyochon/b3.png" alt="b7">
+                  <p>허니시리즈</p>
+              </li>
+              <li>
+                  <img class="b8" src="images/gyochon/b4.png" alt="b8">
+                  <p>블랙시크릿시리즈</p>
+              </li>
+          </ul>
+      </div>
+
+      <div class="franchise">
+        <h4>가맹점 개설안내</h4>
+        <div class="f_wrapper">
+          <ul class="f_ubox">
+            <li class="f_box1">
+              <span class="f_h1">국내 사업문의</span><br><br>
+              확실한 사명감을 지닌 전체 임직원들의 개척정신과 다년간 직영점을 운영하여 터득한<br> 매장 경영의 노하우를 바탕으로 가맹점주님들의 교육부터 매장 오픈 후 세세한 부분까지<br> 지도해 드리고 있습니다.<br><br>
+              <span class="gmme">가맹문의</span>
+            </li>
+            <li>
+              <img class="f_img1" src="images/gyochon/g1.jfif" alt="가맹1">
+            </li>
+          </ul>
+          <ul class="f_bbox">
+            <li>
+              <img class="f_img2" src="images/gyochon/g2.jfif" alt="가맹2">
+            </li>
+            <li class="f_box2">
+              <span class="f_h1">해외 사업문의</span><br><br>
+              세상의 모든 사람들의 건강하고 맛있는 치킨을 즐길 수 있기를 바라는 마음으로 가장 한국적인 맛으로 치킨<br> 브랜드의 새로운 패러다임을 열었습니다. 세계인이 함께하는 브랜드 '교촌'에 대한 더 큰 가능성을 가지고<br> 맛에 대해 오직 한 길을 달려나가는 글로벌 기업의 리더가 되겠습니다.<br><br>
+              <span class="gmme">가맹문의</span>
+            </li>
+          </ul>
+      </div>
+      </div>
+
+      <div class="story">
+        <h4>STORY</h4>
+          <div class="sbox">
+              <ul class="imgbox1">
+                <li class="y1">
+                  <img class="s1" src="images/gyochon/s1.jfif" alt="그림1">
+                </li>
+                <li class="x1">
+                  #행사 #브랜드 #교촌F&B<br>
+                  <span class="ss1">교촌에프앤비, 3일(금)부터<br> ‘제10회 교촌 1991 레이디스 오픈’ 개최</span><br><br>
+                  2024-05-02
+                </li>
+              </ul>
+              <ul class="imgbox2">
+                <li class="y2">
+                  <img class="s2" src="images/gyochon/s2.jfif" alt="그림2">
+                </li>
+                <li class="x2">
+                  #캠페인 #가맹점 #브랜드<br>
+                  <span class="ss2">교촌에프앤비, 1991명 예비엄마 위해 준비했다...</span><br><br>
+                  2024-05-13
+                </li>
+              </ul>
+              <ul class="imgbox3">
+                <li class="y3">
+                  <img class="s3" src="images/gyochon/s3.jfif" alt="그림3">
+                </li>
+                <li class="x3">
+                #브랜드 #교촌F&B<br>
+                <span class="ss3">교촌에프앤비, 1분기 실적<br> 발표 “반등 신호탄 쐈다”</span><br><br>
+                2024-05-10
+                </li>
+              </ul>
+              <ul class="imgbox4">
+                <li class="y4">
+                  <img class="s4" src="images/gyochon/s4.jfif" alt="그림4">
+                </li>
+                <li class="x4">
+                  #행사 #브랜드 #교촌F&B<br>
+                  <span class="ss4">교촌치킨, ‘MZ세대 입맛과<br> 마음 사로잡는다’... 방송인<br> 노홍철과 ‘교촌 치톡 콘서트’ 개최</span><br><br>
+                  2024-05-09
+                </li>
+              </ul>
+          </div>
+          <p class="blog_dbg"> <a href="https://www.kyochonfnb.com/prcenter/news.do">블로그 더보기</a></p>
+      </div>
+
+      <div class="ESG">
+          <h4 class="ESG_h1">ESG</h4>
+          <ul class="ESG_bbox">
+            <li class="ESG_sbox1">
+              <div><img class="ESGimg1" src="images/gyochon/E1.jfif" alt="ESG1"></div>
+              <div>
+                <p class="ESGp1">
+                  #자립준비<br>
+                  <span class="sb1">교촌에프앤비, 청년들의 안정적인 자립<br> 지원한다</span><br><br>
+                  2024-06-03
+                </p>
+              </div>
+            </li>
+            <li class="ESG_sbox2">
+              <div><img class="ESGimg2" src="images/gyochon/E2.jfif" alt="ESG2"></div>
+              <div>
+                <p class="ESGp2">
+                  #지역사회<br>
+                  <span class="sb2">‘제10회 교촌 1991 레이디스 오픈’<br> 성료... 스포츠 꿈나무에 3천만원 후원</span><br><br>
+                  2024-05-07
+                </p>
+              </div>
+            </li>
+            <li class="ESG_sbox3">
+              <div><img class="ESGimg3" src="images/gyochon/E3.jfif" alt="ESG3"></div>
+              <div>
+                <p class="ESGp3">
+                  #미래세대 #바르고봉사단<br>
+                  <span class="sb3">교촌에프앤비 ‘바르고 봉사단’,<br> 초등학교 특수학급 학생 사회화 훈련 동참</span><br><br>
+                  2024-04-05
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="EVENT">
+          <h4 class="event_h4">EVENT</h4>
+          <img class="event_img" src="images/gyochon/bg_event.jfif" alt="event뒷배경">
+        </div>
+
+        <div class="INSTAGRAM">
+          <p class="inst_h1">HELLO!</p>
+          <p class="inst_h2">Kyochon Instagram</p>
+          <ul class="inst_bbox">
+            <li class="inst_sbox1">
+              <div><img class="instimg1" src="images/gyochon/i3.jfif" alt="inst1"></div>
+              <div>
+                <p>
+                  <span class="inst_b">교촌치킨의 n번째 시그니처 메뉴</span><br><br>
+                  2023.05.24
+                </p>
+              </div>
+            </li>
+            <li class="inst_sbox2">
+              <div><img class="instimg2" src="images/gyochon/i1.jfif" alt="inst2"></div>
+              <div>
+                <p>
+                  <span class="inst_b">교촌 무나매표소에 오신걸 환영합니다</span><br><br>
+                  2023.05.16
+                </p>
+              </div>
+            </li>
+            <li class="inst_sbox3">
+              <div><img class="instimg3" src="images/gyochon/i2.jfif" alt="inst3"></div>
+              <div>
+                <p>
+                  <span class="inst_b">서포터스 K-스피커스 2기 모집</span><br><br>
+                  2023.05.16
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        
+    <div id="footer">
+      <div class="sect1">
+        <img src="images/gyochon/logo.png" alt="flgo">
+      </div>
+      <ul class="sect2">
+        <li class="f_b1">대표번호</li>
+        <li class="f_b2">031.371.3500</li>
+          <ul class="sect2_uul">
+            <li class="f_bb1">이용약관</li>
+            <li class="f_bb2">|</li>
+            <li class="f_bb1">개인정보 처리방침</li>
+            <li class="f_bb2">|</li>
+            <li class="f_bb1">이메일무단수집거부</li>
+            <li class="f_bb2">|</li>
+            <li class="f_bb1">찾아오시는길</li>
+          </ul>
+        <li class="f_b3">
+          <span class="f_bb3">사업장소재지 :</span> 39852 경상북도 칠곡군 가산면 송신로 78<br>
+          <span class="f_bb3">본사 주소 :</span> 13453 경기도 성남시 수정구 금토로80번길 15-3(금토동) 교촌1991빌딩&nbsp;&nbsp;<span class="f_bb3">상호명 :</span> 교촌에프앤비(주)&nbsp;&nbsp;<span class="f_bb3">대표이사 :</span> 송종화<br>
+          <span class="f_bb3">소비자상담번호 :</span> 080-320-3000&nbsp;&nbsp;<span class="f_bb3">사업자등록번호 :</span> 513-81-16574&nbsp;&nbsp;<span class="f_bb3">통신판매업신고 :</span> 2012-경상북도칠곡-00023호<br>
+          <span class="f_bb3">개인정보보호책임자 :</span> 신용우&nbsp;&nbsp;COPYRIGHT 2015 © KYOCHON F&B. ALL RIGHTS RESERVED.
+        </li>
+      </ul>
+      <ul class="sect3">
+        <li>
+          <img src="images/gyochon/f1.png" alt="f1">
+        </li>
+        <li>
+          <img src="images/gyochon/f2.png" alt="f2">
+        </li>
+        <li>
+          <img src="images/gyochon/f3.png" alt="f3">
+        </li>
+        <li>
+          <img src="images/gyochon/f4.png" alt="f4">
+        </li>
+      </ul>
+    </div>    
+</body>
+</html>
